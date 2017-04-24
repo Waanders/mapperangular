@@ -111,17 +111,17 @@ export class AppComponent  {
                 // },
 				HoverPaintStyle:{ stroke:"red" },
                 EndpointStyle : { radius:7, fill: "#567567"  },
-				// Overlays:[
-				// 	["Custom", {
-				// 	create:function(component) {
-				// 		return $("<select id='myDropDown'><option value='foo'>foo</option><option value='bar'>bar</option></select>");                
-				// 	},
-				// 	location:0.7,
-				// 	id:"customOverlay"
-				// 	}]
-				// ]
+				Overlays:[
+					["Custom", {
+					create:function(component) {
+						return $("<select id='myDropDown'><option value='foo'>foo</option><option value='bar'>bar</option></select>");                
+					},
+					location:0.7,
+					id:"customOverlay"
+					}]
+				]
 				
-                //,[ "Label", { label:"Connect To", id:"label", cssClass:"aLabel" }]
+                // ,[ "Label", { label:"Connect To", id:"label", cssClass:"aLabel" }]
             });
 
 			//Pak de Run knop en genereer alle connections zodra erop geklikt wordt. 
