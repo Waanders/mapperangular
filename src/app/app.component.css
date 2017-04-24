@@ -1,0 +1,161 @@
+.dark-skin { 
+    padding: 30px;
+    background-color: #404040;
+    outline-width: 0px;
+    height: auto;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+::-webkit-scrollbar {
+    width: 0px;  /* remove scrollbar space */
+    background: transparent;  /* optional: just make scrollbar invisible */
+}
+/* optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+    background: #FF0000;
+}
+
+.dark-skin-container  { 
+    position: relative;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+    padding-top: 0px;
+    background-color: #404040;
+    height: auto;
+    outline-width: 0px;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;  
+}
+
+.middle { 
+  height: 500px;
+}
+
+.middle-top {
+  height: 80px;
+  background-color: #404040;
+  z-index: 3;
+}
+.light {
+  background-color: lightslategrey;
+  z-index: -1;
+}
+
+.dark-skin-code { 
+    padding-left: 30px;
+    background-color:#303030;
+    outline-width: 0px;
+    height: 500px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    z-index: 0;
+}
+
+.dark-semi-header { 
+
+    padding-left: 20px;
+    background-color:#303030;
+    color: white;
+    z-index: 3;
+    height: 80px;
+}
+
+.button-dark {
+       background-color: #404040;
+}
+
+.icon-drag{
+  color:#E8E8E8 ;
+	size: 16px;
+}
+
+.labelClass {
+    color:red;
+    background: red;
+}
+.paddin {
+	padding-left: 50px;
+}
+.disabled {
+	color: red;
+}
+
+
+.item {
+		  border: 1px solid black;
+		  background-color: #ddddff;
+		  width: 100px;
+		  height: 100px;
+		}
+			  
+		#state1 {
+		  position: absolute;
+		  left: 100px;
+		  top: 100px;
+		}
+			  
+		#state2 {
+		  position: absolute;
+		  left: 250px;
+		  top: 100px;
+		}
+			  
+		#state3 {
+		  position: absolute;
+		  left: 100px;
+		  top: 250px;
+		}
+
+affix {
+      top: 40px;
+      left: 680px;
+  }
+.window { z-index:20; }
+.jtk-connector { z-index:4; }
+.jtk-endpoint { z-index:5; }
+.jtk-overlay { z-index:6; }
+
+.left {
+	height:300px;
+  background: red;
+  overflow-y: scroll;
+}
+
+.right { 
+	height:300px;
+  background: blue;
+  overflow-y: scroll;
+}
+svg path {
+  stroke:grey;
+	stroke-width: 3;
+}
+
+
+.toprow {
+  position: relative;
+  z-index: 3;
+  height: 30px;
+  width: auto;
+  background-color: #404040; 
+  
+}
+
+.toprow-header {
+  position: relative;
+  z-index: 3;
+  width: auto;
+  background-color: #404040; 
+  
+}
+
+.bottom {
+  height: 500px;
+  position: relative;
+  z-index: 3;
+  background-color: #303030; 
+
+}

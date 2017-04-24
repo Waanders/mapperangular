@@ -1,3 +1,60 @@
-<h1>
-  {{title}}
-</h1>
+<nav class="navbar navbar-inverse navbar-fixed-top">
+   <div class="container-fluid toprow-header">
+      <div class="navbar-header">
+
+      <a class="navbar-brand" href="#">cosquare mapping</a>
+    </div>
+  </div>
+ <div class="row">
+   <div class ="toprow">
+   </div>
+  </div>  
+<div class="container-fluid dark-skin-container" id="parentcontainer">
+  <div class="row">
+    <div class="col-md-3 dark-semi-header">
+      <h5>Source JSON</h5>
+      <button type="button" #key  class="btn btn-inverse button-dark">
+      <span class="glyphicon glyphicon-log-out"></span> Load
+      </button>
+    </div>
+    <div class="col-md-2 ">  
+    </div>
+     <div class="col-md-3 dark-semi-header">
+      <h5>CDM</h5>
+       <button type="button" class="btn btn-inverse button-dark">
+      <span class="glyphicon glyphicon-log-out"></span> Load
+      </button>
+    </div>
+    <div class="col-md-1">
+ 
+    </div>
+    <div class="col-md-3 dark-semi-header">
+      <h5>Preview</h5>
+    </div>
+  </div>
+  
+  <!-- SECOND ROW - --> 
+  <div class="row" >
+    <div class="col-md-3 dark-skin-code">
+      <t-json-viewer-source [json]="asset" (onCollapse)="checkCollapse($event)"></t-json-viewer-source>
+    </div>
+     <div class="col-md-2 middle">
+
+    </div>
+    <div class="col-md-3 dark-skin-code">
+       <t-json-viewer [json]="cdm" ></t-json-viewer>
+    </div>
+    <div class="col-md-1">
+        <button class="btn btn-primary btn-success" id="runbutton" ><span class="glyphicon glyphicon-play"></span> Run forest</button>
+    </div>
+    <div class="col-md-3 dark-skin-code">
+      <t-json-viewer [json]="mapped"></t-json-viewer> 
+    </div>
+  </div>
+</div>
+<footer class="footer bottom">
+  <div class="container">
+    <p class="text-muted">Datacon 2017</p>
+  </div>
+</footer>
+

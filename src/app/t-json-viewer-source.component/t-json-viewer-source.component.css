@@ -1,0 +1,136 @@
+.t-json-viewer {
+  font-family: 'Inconsolata', monospace;
+  /*font-weight: 500;*/
+  font-size: 12px;
+  width: 100%;
+  margin: 0px;
+  background-color: #303030;
+  /*outline-color: #21201E;*/
+  /*overflow: scroll; */
+}
+
+
+::-moz-selection { /* Code for Firefox */
+    /*color: red;*/
+    background: lightslategrey;
+ 
+
+}
+
+::selection {
+    /*color: red; */
+    background: lightslategrey;
+    
+}
+/* Item */
+
+.item {
+  padding: 7px;
+  margin: 0px;
+  
+}
+.badge-dark {
+  background-color: #3f3f3f;
+}
+
+.badge-dark-source {
+  background-color: #3f3f3f;
+  color: white;
+}
+
+.inner-item {
+  margin-left: 12px;
+  transition: transform 0.1s ease-in;
+}
+
+/* Main */
+
+.item__title {
+  white-space: nowrap;
+}
+
+.item__key {
+  color: #EBC094;
+}
+
+.item__dot {
+  color: #999;
+}
+
+.item__value {
+  color: #c3ddf7;
+}
+
+/* Colors */
+
+.item__type--array .item__value {
+  color: #999;
+}
+
+.item__type--object .item__value {
+  color: #999;
+}
+
+.item__type--string .item__value {
+  color: #c3ddf7;
+}
+
+.item__type--number .item__value {
+  color: palegreen;
+}
+
+.item__type--boolean .item__value {
+  color: #494949;
+  background: #FFE66D;
+}
+
+.item__type--date .item__value {
+  color: #05668D;
+}
+
+.item__type--function .item__value {
+  color: #999;
+}
+
+.item__type--null .item__value {
+  color: #fff;
+  background: red;
+}
+
+.item__type--undefined .item__key {
+  color: #999;
+}
+.item__type--undefined .item__value {
+  color: #fff;
+  background: #999;
+}
+
+/* */
+
+.toggler {
+  color: white;
+  font-size: 1em;
+  line-height: 1.2em;
+  vertical-align: middle;
+  opacity: .6;
+  position: absolute;
+  margin-left: -16px;
+  margin-top: 3px;
+}
+
+.toggler::after {
+  display: inline-block;
+  content: "►";
+  transition: transform 0.1s ease-in;
+}
+
+.is-opened-true > .item__title > .toggler::after {
+  transform: rotate(90deg);
+}
+
+/* */
+
+.is-object-true > .toggler,
+.is-object-true > .item__title{
+  cursor: pointer;
+}
